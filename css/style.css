@@ -290,6 +290,14 @@
   background-color: var(--form-grey);
 }
 
+/* Empty page */
+
+.empty-page p {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
 /* Adress */
 
 .adress {
