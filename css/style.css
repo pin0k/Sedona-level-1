@@ -24,6 +24,7 @@
   --basic-light-white: rgba(255, 255, 255, 0.9);
   --basic-extra-white: rgba(255, 255, 255, 0.3);
   --basic-grey: #eeeeee;
+  --dark-grey: #666666;
   --text-grey: #333333;
   --background-grey: #888888;
   --form-grey: #f2f2f2;
@@ -90,14 +91,15 @@
   opacity: 0.3;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.site-navigation a.active {
   color: var(--brown);
 }
 
 /* Welcome */
 
 .welcome {
-  background-image: url("../img/background-photo.jpg");
+  background-image: url("../img/index/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -174,6 +176,118 @@
 .button-search:active {
   background-color: var(--brown-active);
   color: var(--basic-extra-white);
+}
+
+/* Filters */
+
+.filter {
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+  background-image: url(../img/catalog/bg-catalog.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--special);
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.filter-button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21[x];
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+/* Sorting */
+
+.sorting-result {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sorting-title,
+.sorting ul {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting-button {
+  color: var(--basic-dark);
+  background-color: transparent;
+}
+
+/* Catalog */
+
+.catalog-list,
+.catalog-classification {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: var(--basic-dark);
+}
+
+.catalog-item a:hover {
+  color: var(--blue);
+}
+
+.catalog-item a:focus,
+.catalog-item a:active {
+  color: var(--basic-dark);
+  opacity: 0.3;
+}
+
+.catalog-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.button-more,
+.botton-to-book {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.botton-to-book {
+  background-color: var(--brown);
+}
+
+.botton-to-book:hover {
+  background-color: var(--brown-hover);
+}
+
+.botton-to-book:focus,
+.botton-to-book:active {
+  color: var(--basic-extra-white);
+  background-color: var(--brown-active);
+}
+
+
+.catalog-rating {
+  color: var(--dark-grey);
+  background-color: var(--form-grey);
 }
 
 /* Adress */
