@@ -387,7 +387,6 @@
   background-color: var(--basic-brown-active);
 }
 
-
 .catalog-rating {
   color: var(--dark-grey-600);
   background-color: var(--basic-grey-100);
@@ -465,6 +464,8 @@
   margin: 0;
   max-width: 327px;
   justify-self: end;
+  display: inline-flex;
+  align-items: flex-end;
 }
 
 .copyright-link:hover svg path {
