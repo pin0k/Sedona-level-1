@@ -17,10 +17,10 @@
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a class="active">Гостиницы</a></li>
+          <li class="site-navigation-item left-item"><a href="blank.html">Информация</a></li>
+          <li class="site-navigation-item left-item"><a href="blank.html">Фото и видео</a></li>
+          <li class="site-navigation-item right-item"><a href="blank.html">Карта штата</a></li>
+          <li class="site-navigation-item right-item"><a class="active">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -29,57 +29,29 @@
       <section class="filters">
         <h2>Фильтр гостиниц</h2>
         <form method="GET" action="https://echo.htmlacademy.ru/" class="filter">
-          <fieldset class="filter-item">
+          <fieldset class="filter-item fieldset-clear">
             <legend>Инфраструктура:</legend>
-            <ul>
-              <li class="filter-option filter-checkbox">
-                <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">бассейн</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking">парковка</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input type="checkbox" name="wifi" id="wifi">
-                <label for="wifi">wi-fi</label>
-              </li>
-            </ul>
+            <label><input type="checkbox" name="pool" value ="pool" checked>бассейн</label>
+            <label><input type="checkbox" name="parking" value="parking">парковка</label>
+            <label><input type="checkbox" name="wifi" value="wifi">wi-fi</label>
           </fieldset>
-          <fieldset class="filter-item">
+          <fieldset class="filter-item fieldset-clear">
             <legend>Тип жилья</legend>
-            <ul>
-              <li class="filter-option filter-checkbox">
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">гостиница</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">мотель</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input type="checkbox" name="apartaments" id="apartaments" checked>
-                <label for="apartaments">апартаменты</label>
-              </li>
-            </ul>
+            <label><input type="checkbox" name="hotel" value="hotel" checked>гостиница</label>
+            <label><input type="checkbox" name="motel" value="motel" checked>мотель</label>
+            <label><input type="checkbox" name="apartaments" value="apartaments" checked>апартаменты</label>
           </fieldset>
-          <fieldset class="filter-item">
+          <fieldset class="filter-item form-price fieldset-clear">
             <legend>Стоимость в сутки (р):</legend>
-            <div class="filter-range">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
+            <div class="price-grid">
+              <div class="price-grid-wrap">
+                <label class="price-grid-min"><input type="text" value="ОТ 0"></label>
+                <label class="price-grid-max"><input type="text" value="ДО 3000"></label>
+              </div>
+              <div class="price-range">
+                <input type="range" id="priceslider" name="priceslider" min="0" max="3000" step="1" value="2500">
                 <div class="range-toggle range-toggle-min"></div>
                 <div class="range-toggle range-toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">
-                  <input type="text" name="min-price" value="0">
-                </label>
-                <label class="max-price">
-                  <input type="text" name="max-price" value="30000">
-                </label>
               </div>
             </div>
           </fieldset>
@@ -90,18 +62,18 @@
         <h2>Сортировка списка гостиниц</h2>
         <p class="sorting-result">Найдено: 3</p>
         <h3 class="sorting-title">Сортировка:</h3>
-        <ul>
-          <li class="sorting-option">
+        <ul class="sorting-option-1">
+          <li>
             <a>По цене</a>
           </li>
-          <li class="sorting-option">
+          <li>
             <a>По типу</a>
           </li>
-          <li class="sorting-option">
+          <li>
             <a>По рейтингу</a>
           </li>
         </ul>
-        <ul>
+        <ul class="sorting-option-2">
           <li>
             <button type="button" class="button sorting-button">Больше</button>
           </li>
@@ -183,7 +155,7 @@
               <h3>Villas at Poco Diablo</h3>
             </a>
             <p class="catalog-item-image">
-              <img src="img/catalog/villas_at_poco_diablo.jpg" src="img/catalog/villas_at_poco_diablo@2x.jpg" width="135" height="90" alt="Гостиница Villas at Poco Diablo">
+              <img src="img/catalog/villas_at_poco_diablo.jpg" srcset="img/catalog/villas_at_poco_diablo@2x.jpg" width="135" height="90" alt="Гостиница Villas at Poco Diablo">
             </p>
             <p class="catalog-category">Апартаменты</p>
             <p class="catalog-item-price">От 2000 Р.</p>
