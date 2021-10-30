@@ -101,10 +101,6 @@
 
 /* Main navigation */
 
-.page-header {
-  margin-bottom: 70px;
-}
-
 .page-navigation {
   display: grid;
   font-size: 14px;
@@ -171,16 +167,41 @@
 /* Welcome */
 
 .welcome {
+  width: 1200px;
+  height: 509px;
   text-align: center;
   background-image: url("../img/index/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-img {
+  width: 457px;
+  height: 351px;
 }
 
 /* Features */
 
 .features {
+  padding-top: 43px;
   text-align: center;
+}
+
+.feature-title {
+  width: 470px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0 auto 17px auto;
+}
+
+.feature-description {
+  margin-bottom: 51px;
 }
 
 .features-list {
@@ -213,15 +234,22 @@
   align-items: stretch;
 }
 
-.feature-item-title {
-  flex-basis: 400px;
+.feature-item-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 47px 49px 51px 50px;
 }
 
-.feature-item-title--blue {
+.feature-item-title {
+  width: 150px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.feature-item-wrap--blue {
   background-color: var(--basic-blue);
   color: var(--basic-white-300);
 }
@@ -233,6 +261,10 @@
 
 .feature-item-description {
   max-width: 301px;
+}
+
+.feature-item:nth-child(2) .feature-item-image {
+  order: -1;
 }
 
 .additional-list {
@@ -247,23 +279,52 @@
 
 .additional-item {
   flex-basis: 400px;
-  min-height: 330px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 160px;
 }
 
-.feature-item h3,
-.additional-item h4 {
+.additional-item-title {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  margin: 0 auto 33px auto;
+  position: relative;
+}
+
+.additional-item-title::before {
+  position: absolute;
+  content: '';
+  bottom: 56px;
+  background-repeat: no-repeat;
+}
+
+.housing::before {
+  width: 75px;
+  height: 72px;
+  left: -3px;
+  background-image: url(/img/index/icon-1.svg);
+}
+
+.meal::before {
+  width: 75px;
+  height: 70px;
+  left: -18px;
+  background-image: url(/img/index/icon-2.svg);
+}
+
+.souvenirs::before {
+  width: 64px;
+  height: 77px;
+  left: 20px;
+  background-image: url(/img/index/icon-3.svg);
 }
 
 .additional-item-description {
-  max-width: 301px;
+  margin: 0 73px 82px 73px;
 }
 
 /* Capture unit*/
