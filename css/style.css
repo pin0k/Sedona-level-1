@@ -127,8 +127,7 @@
 }
 
 .site-navigation-item {
-  flex-basis: 200px;
-  text-align: center;
+  flex-basis: 250px;
 }
 
 .right-item {
@@ -142,12 +141,9 @@
 }
 
 .site-navigation a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--basic-dark);
+  display: block;
+  padding: 15px 72px;
 }
 
 .site-navigation a:hover {
