@@ -173,11 +173,22 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .welcome-img {
   width: 457px;
   height: 351px;
+}
+
+.welcome::before {
+  position: absolute;
+  content: '';
+  width: 1200px;
+  height: 57px;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/index/Shape.svg");
 }
 
 /* Features */
