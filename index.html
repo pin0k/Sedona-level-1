@@ -92,12 +92,12 @@
         <h2 class="visually-hidden">Блок захвата</h2>
         <h3 class="capture-unit-title">Заинтересовались?</h3>
         <p class="capture-unit-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <button type="button" class="button button-search">Поиск гостиницы в Седоне</button>
+        <button type="button" class="button button-search"><span>Поиск гостиницы в Седоне</span></button>
       </section>
       <section class="adress">
         <h2 class="visually-hidden">Как проехать</h2>
         <!-- Здесь будет карта на js-->
-        <img src="img/index/map.png" srcset="img/index/map@2x.png" alt="Аризона, город Седона" width="1200" height="473" class="map">
+        <img src="img/index/map.png" srcset="img/index/map@2x.png" alt="Аризона, город Седона" width="1200" height="474" class="map">
       </section>
     </main>
     <footer class="page-footer">
@@ -145,27 +145,56 @@
       </p>
     </footer>
     <section class="modal">
-      <h2>Поиск гостиницы в Седоне</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post" class="form-search">
-        <p>
+      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+      <form action="https://echo.htmlacademy.ru/" method="post" class="appointment-form">
+        <div class="appointment-item">
           <label for="arrival-date">Дата заезда:</label>
           <input id="arrival-date" name="arrival_date" placeholder="24 апреля 2017">
-        </p>
-        <p>
+          <span class="calendar">
+            <svg fill="none" viewBox="0 0 21 23">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377Zm3.159 18.459a.448.448 0 0 0 .123-.32h.001V4.862a.449.449 0 0 0-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 0 0-.438.459v16.302a.45.45 0 0 0 .438.459h17.501a.448.448 0 0 0 .314-.139Z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225Zm0 3.443h2.625v2.067H4.594v-2.067Zm2.625 3.444H4.594v2.066h2.625v-2.066Zm1.969 0h2.625v2.066H9.188v-2.066Zm2.625-3.444H9.188v2.067h2.625v-2.067ZM9.188 9.225h2.625v2.066H9.188V9.225Zm7.218 6.887h-2.625v2.066h2.625v-2.066Zm-2.625-3.444h2.625v2.067h-2.625v-2.067Zm2.625-3.443h-2.625v2.066h2.625V9.225Z" fill="#A9A9A9"/>
+            </svg>
+          </span>
+        </div>
+        <div class="appointment-item">
           <label for="date-of-departure">Дата выезда:</label>
           <input id="date-of-departure" name="date_of_departure" placeholder="4 июля 2017">
-        </p>
-        <p>
+          <span class="calendar">
+            <svg fill="none" viewBox="0 0 21 23">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377Zm3.159 18.459a.448.448 0 0 0 .123-.32h.001V4.862a.449.449 0 0 0-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 0 0-.438.459v16.302a.45.45 0 0 0 .438.459h17.501a.448.448 0 0 0 .314-.139Z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225Zm0 3.443h2.625v2.067H4.594v-2.067Zm2.625 3.444H4.594v2.066h2.625v-2.066Zm1.969 0h2.625v2.066H9.188v-2.066Zm2.625-3.444H9.188v2.067h2.625v-2.067ZM9.188 9.225h2.625v2.066H9.188V9.225Zm7.218 6.887h-2.625v2.066h2.625v-2.066Zm-2.625-3.444h2.625v2.067h-2.625v-2.067Zm2.625-3.443h-2.625v2.066h2.625V9.225Z" fill="#A9A9A9"/>
+            </svg>
+          </span>
+        </div>
+        <div class="appointment-item choice-age">
           <label for="adults">Взрослые:</label>
           <input id="adults" name="adults" placeholder="2">
-        </p>
-        <p>
+          <span class="change-quantity minus">
+            <svg fill="none" viewBox="0 0 12 3">
+              <path fill="#A9A9A9" d="M0 0h12v3H0z"/>
+            </svg>
+          </span>
+          <span class="change-quantity plus">
+            <svg fill="none" viewBox="0 0 11 11">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23Z" fill="#A9A9A9"/>
+            </svg>
+          </span>
+        </div>
+        <div class="appointment-item choice-age">
           <label for="children">Дети:</label>
           <input id="children" name="children" placeholder="0">
-        </p>
-        <button class="button" type="submit">Найти</button>
+          <span class="change-quantity minus">
+            <svg fill="none" viewBox="0 0 12 3">
+              <path fill="#A9A9A9" d="M0 0h12v3H0z"/>
+            </svg>
+          </span>
+          <span class="change-quantity plus">
+            <svg fill="none" viewBox="0 0 11 11">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23Z" fill="#A9A9A9"/>
+            </svg>
+          </span>
+        </div>
+        <button class="button appointment-button" type="submit">Найти</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
