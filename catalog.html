@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Сайт туристического города Седона в штате Аризона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
@@ -16,12 +16,16 @@
         <a href="index.html" class="page-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта города Седона">
         </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item left-item"><a href="blank.html">Информация</a></li>
-          <li class="site-navigation-item left-item"><a href="blank.html">Фото и видео</a></li>
-          <li class="site-navigation-item right-item"><a href="blank.html">Карта штата</a></li>
-          <li class="site-navigation-item right-item"><a class="active">Гостиницы</a></li>
-        </ul>
+        <div class="site-navigation-wrap">
+          <ul class="site-navigation">
+            <li class="site-navigation-item left-item"><a href="blank.html">Информация</a></li>
+            <li class="site-navigation-item left-item"><a href="blank.html">Фото и видео</a></li>
+          </ul>
+          <ul class="site-navigation">
+            <li class="site-navigation-item right-item"><a href="blank.html">Карта штата</a></li>
+            <li class="site-navigation-item right-item"><a class="active">Гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container page-catalog">

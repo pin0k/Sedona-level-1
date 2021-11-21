@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Сайт туристического города Седона в штате Аризона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -16,12 +16,16 @@
         <a class="page-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта города Седона">
         </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item left-item"><a href="blank.html">Информация</a></li>
-          <li class="site-navigation-item left-item"><a href="blank.html">Фото и видео</a></li>
-          <li class="site-navigation-item right-item"><a href="blank.html">Карта штата</a></li>
-          <li class="site-navigation-item right-item"><a href="catalog.html">Гостиницы</a></li>
-        </ul>
+        <div class="site-navigation-wrap">
+          <ul class="site-navigation">
+            <li class="site-navigation-item left-item"><a href="blank.html">Информация</a></li>
+            <li class="site-navigation-item left-item"><a href="blank.html">Фото и видео</a></li>
+          </ul>
+          <ul class="site-navigation">
+            <li class="site-navigation-item right-item"><a href="blank.html">Карта штата</a></li>
+            <li class="site-navigation-item right-item"><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="page-index">
@@ -35,55 +39,55 @@
         <p class="feature-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="feature-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="features-list">
-          <li class="feature-item">
+          <li class="feature-item feature-item-first">
             <div class="feature-item-wrap feature-item-wrap--blue">
-              <h3 class="feature-item-title">Настоящий городок</h3>
-              <p>— №1 —</p>
-              <p class="feature-item-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="feature-item-title">Настоящий <br>городок</h3>
+              <p class="feature-item-number">— №1 —</p>
+              <p class="feature-item-description">Седона - не аттракцион для туристов, там <br>течёт своя жизнь</p>
             </div>
             <img src="img/index/Advantage1.jpg" srcset="img/index/Advantage1@2x.jpg" width="800" height="256" alt="Первое преимущество Седоны" class="feature-item-image">
             <ul class="additional-list">
               <li class="additional-item">
                 <h4 class="additional-item-title housing">Жильё</h4>
-                <p class="additional-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="additional-item-description">Рекомендуем пожить в настоящем <br>мотеле, всё как в кино!</p>
               </li>
               <li class="additional-item">
                 <h4 class="additional-item-title meal">Еда</h4>
-                <p class="additional-item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="additional-item-description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
               </li>
               <li class="additional-item">
                 <h4 class="additional-item-title souvenirs">Сувениры</h4>
-                <p class="additional-item-description">Не только китайского, но и местного производства!</p>
+                <p class="additional-item-description">Не только китайского, но и местного<br> производства!</p>
               </li>
             </ul>
           </li>
-          <li class="feature-item">
+          <li class="feature-item feature-item-second">
             <div class="feature-item-wrap feature-item-wrap--blue">
-              <h3 class="feature-item-title">Там есть Мост дьявола</h3>
-              <p>— №2 —</p>
-              <p class="feature-item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <h3 class="feature-item-title">Там есть <br>Мост дьявола</h3>
+              <p class="feature-item-number">— №2 —</p>
+              <p class="feature-item-description">Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
             </div>
             <img src="img/index/Advantage2.jpg" srcset="img/index/Advantage2@2x.jpg" width="800" height="256" alt="Второе преимущество Седоны" class="feature-item-image">
           </li>
           <li class="feature-item">
             <div class="feature-item-wrap">
-              <h3 class="feature-item-title">Небольшая площадь</h3>
-              <p>— №3 —</p>
-              <p class="feature-item-description">все достопримечательности находятся очень близко</p>
+              <h3 class="feature-item-title">Небольшая <br>площадь</h3>
+              <p class="feature-item-number">— №3 —</p>
+              <p class="feature-item-description">все достопримечательности <br>находятся очень близко</p>
             </div>
           </li>
           <li class="feature-item">
             <div class="feature-item-wrap">
-              <h3 class="feature-item-title">Красивая дорога</h3>
-              <p>— №4 —</p>
-              <p class="feature-item-description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+              <h3 class="feature-item-title">Красивая <br>дорога</h3>
+              <p class="feature-item-number">— №4 —</p>
+              <p class="feature-item-description">Ехать в Седону из Лас-вегаса совсем <br>не скучно!</p>
             </div>
           </li>
           <li class="feature-item">
             <div class="feature-item-wrap">
-              <h3 class="feature-item-title">Mало туристов</h3>
-              <p>— №5 —</p>
-              <p class="feature-item-description">Большинство едет в Гранд каньон и толпится там</p>
+              <h3 class="feature-item-title">Mало <br>туристов</h3>
+              <p class="feature-item-number">— №5 —</p>
+              <p class="feature-item-description">Большинство едет в Гранд каньон <br>и толпится там</p>
             </div>
           </li>
         </ul>
@@ -91,7 +95,7 @@
       <section class="capture-unit">
         <h2 class="visually-hidden">Блок захвата</h2>
         <h3 class="capture-unit-title">Заинтересовались?</h3>
-        <p class="capture-unit-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <p class="capture-unit-subtitle">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <button type="button" class="button button-search"><span>Поиск гостиницы в Седоне</span></button>
       </section>
       <section class="adress">
@@ -103,7 +107,7 @@
     <footer class="page-footer">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Как с нами связаться</h2>
-        <p>#visitSEDONA</p>
+        <p class="footer-tag">#visitSEDONA</p>
         <a href="tel:+74956660166" class="footer-phone">ТЕЛ: +7(495) 666-01-66</a>
       </section>
       <section class="footer-social">
