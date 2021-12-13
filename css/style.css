@@ -914,6 +914,7 @@
 }
 
 .sorting-button {
+  display: block;
   background-color: transparent;
   width: 0;
   height: 0;
@@ -923,7 +924,7 @@
   border-color: transparent transparent var(--basic-grey-850);
 }
 
-.sorting-down {
+.sorting-option .sorting-down {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1487,7 +1488,27 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 12px;
+  position: relative;
 }
+
+.appointment-item input[type="date"]:before {
+  content: attr(placeholder);
+}
+
+.appointment-item input[type="date"]:focus:before {
+  content: '';
+}
+
+.appointment-item input::-webkit-outer-spin-button,
+.appointment-item input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.appointment-item input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+
 
 .appointment-item:hover input {
   background-color: var(--basic-grey-200);
