@@ -526,6 +526,7 @@
   text-transform: uppercase;
   background-color: var(--basic-blue);
   border: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -545,11 +546,9 @@
 
 .button-search {
   background-color: var(--basic-brown);
-  padding: 30px 124px 30px 125px;
-}
-.button-search span {
-  width: 319px;
+  padding: 30px 139px 30px 140px;
   display: inline-block;
+  min-width: 290px;
 }
 
 .button-search:hover {
@@ -1432,6 +1431,10 @@
   top: 2167px;
   left: 50%;
   margin-left: -284px;
+}
+
+.modal-show {
+  display: none;
 }
 
 .appointment-form {

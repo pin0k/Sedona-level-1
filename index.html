@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Сайт туристического города Седона в штате Аризона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -96,12 +96,13 @@
         <h2 class="visually-hidden">Блок захвата</h2>
         <h3 class="capture-unit-title">Заинтересовались?</h3>
         <p class="capture-unit-subtitle">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <button type="button" class="button button-search" aria-label="Поиск гостиницы в Седоне"><span>Поиск гостиницы в Седоне</span></button>
+        <a class="button button-search" aria-label="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</a>
       </section>
       <section class="adress">
         <h2 class="visually-hidden">Как проехать</h2>
         <!-- Здесь будет карта на js-->
-        <img src="img/index/map.png" srcset="img/index/map@2x.png" alt="Аризона, город Седона" width="1200" height="474" class="map">
+        <img class="visually-hidden" src="img/index/map.png" srcset="img/index/map@2x.png" alt="Аризона, город Седона" width="1200" height="474" class="map">
+        <iframe width="1200" height="474" class="map" allowfullscreen title="Аризона, город Седона" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18518.24879908678!2d-111.79683013575944!3d34.86640680662824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1639623973554!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
     </main>
     <footer class="page-footer">
@@ -139,7 +140,7 @@
         </a>
       </p>
     </footer>
-    <section class="modal">
+    <section class="modal modal-search">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <form action="https://echo.htmlacademy.ru/" method="post" class="appointment-form">
         <div class="appointment-item">
@@ -191,5 +192,6 @@
         <button class="button appointment-button" type="submit" aria-label="Найти гостиницу">Найти</button>
       </form>
     </section>
+    <script src="js/search.min.js"></script>
   </body>
 </html>
